@@ -1,5 +1,20 @@
 import React from 'react';
 import './App.css';
+// Firebase App (the core Firebase SDK) is always required and must be listed first
+import firebase from "firebase/app";
+import "firebase/auth";
+import "firebase/firestore";
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCIit9BemX0JlggU7vY5RDrH8svziMCDis",
+    authDomain: "testfirebase-bba09.firebaseapp.com",
+    projectId: "testfirebase-bba09",
+    storageBucket: "testfirebase-bba09.appspot.com",
+    messagingSenderId: "173212418194",
+    appId: "1:173212418194:web:35dc5d3b88335b35dfe64b"
+};
+
+firebase.initializeApp(firebaseConfig)
 
 function App() {
     let elements = [];
